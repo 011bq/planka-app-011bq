@@ -5,7 +5,7 @@ class PlankaUser {
   final String email;
   final bool? isAdmin;
   final String name;
-  final String username;
+  final String? username;
   final String? phone;
   final String? organization;
   final String? language;
@@ -24,7 +24,7 @@ class PlankaUser {
     required this.email,
     this.isAdmin,
     required this.name,
-    required this.username,
+    this.username,
     this.phone,
     this.organization,
     this.language,
@@ -45,7 +45,7 @@ class PlankaUser {
       email: json['email'],
       isAdmin: json['isAdmin'],
       name: json['name'],
-      username: json['username'],
+      username: json['username'] ?? '',
       phone: json['phone'],
       organization: json['organization'],
       language: json['language'],

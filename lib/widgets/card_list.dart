@@ -1432,7 +1432,7 @@ class _CardListState extends State<CardList> with SingleTickerProviderStateMixin
           })
               .catchError((error) {
             // Handle any errors that occur during the chain of operations
-            debugPrint('Error: $error');
+            debugPrint('Error-_takePhoto: $error');
           });
         }
 

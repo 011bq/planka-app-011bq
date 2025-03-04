@@ -188,7 +188,7 @@ class BoardProvider with ChangeNotifier {
         throw Exception('Failed to update board: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error: $error');
+      debugPrint('Error-updateBoardName: $error');
       throw Exception('Failed to update board');
     }
   }
@@ -218,7 +218,7 @@ class BoardProvider with ChangeNotifier {
         throw Exception('Failed to add Board user: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error: $error');
+      debugPrint('Error-addBoardMember: $error');
       throw Exception('Failed to add Board user');
     }
   }
@@ -245,7 +245,7 @@ class BoardProvider with ChangeNotifier {
         throw Exception('Failed to delete Board user: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error: $error');
+      debugPrint('Error-removeBoardMember: $error');
       throw Exception('Failed to delete Board user');
     }
   }
@@ -263,7 +263,7 @@ class BoardProvider with ChangeNotifier {
       notifyListeners();
 
     } catch (error) {
-      debugPrint('Error: $error');
+      debugPrint('Error-updateLabel: $error');
       throw Exception('Failed to update board');
     }
   }
