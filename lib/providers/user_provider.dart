@@ -55,7 +55,7 @@ class UserProvider with ChangeNotifier {
         throw Exception('Failed to load users');
       }
     } catch (error) {
-      debugPrint('Error-fetchUsers: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to load users');
     }
   }
@@ -95,7 +95,7 @@ class UserProvider with ChangeNotifier {
         throw Exception('Failed to load user');
       }
     } catch (error) {
-      debugPrint('Error-fetchSpecificUser: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to load user');
     }
   }

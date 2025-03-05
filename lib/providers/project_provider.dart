@@ -17,9 +17,6 @@ class ProjectProvider with ChangeNotifier {
 
   Future<void> fetchProjects() async {
     final url = Uri.parse('${authProvider.selectedProtocol}://${authProvider.domain}/api/projects');
-    debugPrint('url: ${url}');
-    debugPrint('domain: ${authProvider.domain}');
-    debugPrint('selectedProtocol: ${authProvider.selectedProtocol}');
 
     try {
       final response = await http.get(
@@ -39,7 +36,7 @@ class ProjectProvider with ChangeNotifier {
         throw Exception('Failed to load projects');
       }
     } catch (error) {
-      debugPrint('Error-fetchProjects: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to load projects');
     }
   }
@@ -67,7 +64,7 @@ class ProjectProvider with ChangeNotifier {
         throw Exception('Failed to load projects');
       }
     } catch (error) {
-      debugPrint('Error-createProject: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to create project');
     }
   }
@@ -95,7 +92,7 @@ class ProjectProvider with ChangeNotifier {
         throw Exception('Failed to load projects');
       }
     } catch (error) {
-      debugPrint('Error-deleteProject: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to load projects');
     }
   }
@@ -125,7 +122,7 @@ class ProjectProvider with ChangeNotifier {
         throw Exception('Failed to update project: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-updateProjectName: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update project');
     }
   }

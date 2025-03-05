@@ -273,7 +273,7 @@ class ListProvider with ChangeNotifier {
         throw Exception('Failed to delete list: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-deleteList: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to delete list');
     }
   }
@@ -313,7 +313,7 @@ class ListProvider with ChangeNotifier {
         throw Exception('Failed to update list: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-updateListName: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update list');
     }
   }

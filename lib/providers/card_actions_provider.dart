@@ -36,7 +36,7 @@ class CardActionsProvider with ChangeNotifier {
         throw Exception('Failed to load card actions');
       }
     } catch (error) {
-      debugPrint('Error-fetchCardComment: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to load card actions');
     }
   }
@@ -57,7 +57,7 @@ class CardActionsProvider with ChangeNotifier {
         throw Exception('Failed to load card actions');
       }
     } catch (error) {
-      debugPrint('Error-deleteComment: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to load card actions');
     }
   }
@@ -80,7 +80,7 @@ class CardActionsProvider with ChangeNotifier {
         throw Exception('Failed to load card actions');
       }
     } catch (error) {
-      debugPrint('Error-createComment: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to load card actions');
     }
   }
@@ -102,7 +102,7 @@ class CardActionsProvider with ChangeNotifier {
         throw Exception('Failed to load card actions');
       }
     } catch (error) {
-      debugPrint('Error-updateComment: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to load card actions');
     }
   }

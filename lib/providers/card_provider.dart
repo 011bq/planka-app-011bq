@@ -63,7 +63,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to update card name: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-updateCardTitle: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update card name');
     }
   }
@@ -95,7 +95,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to update card: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-updateStopwatch: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update card');
     }
   }
@@ -126,7 +126,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to update card: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-deleteStopwatch: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update card');
     }
   }
@@ -149,7 +149,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to update card name: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-updateCardDueDate: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update card name');
     }
   }
@@ -178,7 +178,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to fetch card data: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-addCardLabel: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update labels');
     }
   }
@@ -207,7 +207,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to add card user: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-addCardMember: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to add card user');
     }
   }
@@ -236,7 +236,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to delete card user: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-removeCardMember: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to delete card user');
     }
   }
@@ -261,7 +261,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to fetch card data: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-removeCardLabel: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update labels');
     }
   }
@@ -279,7 +279,7 @@ class CardProvider with ChangeNotifier {
 
       notifyListeners();
     } catch (error) {
-      debugPrint('Error-deleteCard: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to delete card');
     }
   }
@@ -302,7 +302,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to card name: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-updateCardDescription: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to card name');
     }
   }
@@ -327,7 +327,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to card name: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-updateCardCoverAttachId: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to card name');
     }
   }
@@ -350,7 +350,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to add task: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-addTask: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to add task');
     }
   }
@@ -372,7 +372,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to remove task: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-removeTask: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to remove task');
     }
   }
@@ -395,7 +395,7 @@ class CardProvider with ChangeNotifier {
         throw Exception('Failed to toggle task completion: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-toggleTaskCompletion: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to toggle task completion');
     }
   }

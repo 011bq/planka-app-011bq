@@ -48,7 +48,7 @@ class AuthProvider with ChangeNotifier {
         throw Exception('failed_to_authenticate'.tr());
       }
     } catch (error) {
-      debugPrint('Error-login: $error');
+      debugPrint('Error: $error');
       showTopSnackBar(
         Overlay.of(context),
         CustomSnackBar.error(
@@ -79,7 +79,7 @@ class AuthProvider with ChangeNotifier {
         return false;
       }
     } catch (error) {
-      debugPrint('Error-logout: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to logout');
     }
   }

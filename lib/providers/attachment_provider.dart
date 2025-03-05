@@ -126,7 +126,7 @@ class AttachmentProvider with ChangeNotifier {
         throw Exception('Failed to delete attachment: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-deleteAttachment: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to delete attachment');
     }
   }
@@ -203,7 +203,7 @@ class AttachmentProvider with ChangeNotifier {
         throw Exception('Failed to update attachment name: ${response.reasonPhrase}');
       }
     } catch (error) {
-      debugPrint('Error-renameAttachment: $error');
+      debugPrint('Error: $error');
       throw Exception('Failed to update attachment name');
     }
   }
