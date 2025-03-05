@@ -98,29 +98,6 @@ class _LoginScreenState extends State<LoginScreen> {
               textInputAction: TextInputAction.done,
               onSubmitted: (_) => _login(),
             ),
-            DropdownButton<String>(
-              value: _selectedProtocol,
-              isExpanded: true,
-              icon: const Icon(Icons.keyboard_arrow_down),
-              iconSize: 24,
-              elevation: 16,
-              style: const TextStyle(color: Colors.black),
-              underline: Container(
-                height: 2,
-                color: Colors.indigo,
-              ),
-              onChanged: (String? newProtocol) {
-                setState(() {
-                  _selectedProtocol = newProtocol!;
-                });
-              },
-              items: _protocolOptions.map<DropdownMenuItem<String>>((protocol) {
-                return DropdownMenuItem<String>(
-                  value: protocol,
-                  child: Text(protocol.toUpperCase()),
-                );
-              }).toList(),
-            ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: _login,
